@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         
         centerslot.translatesAutoresizingMaskIntoConstraints = false
         mainview.addSubview(centerslot)
-        centerslot.leadingAnchor.constraint(equalTo: leftslot.trailingAnchor,constant: 15).isActive = true
+        centerslot.leadingAnchor.constraint(equalTo: leftslot.trailingAnchor,constant: 5).isActive = true
         centerslot.topAnchor.constraint(equalTo: mainview.topAnchor).isActive = true
         centerslot.bottomAnchor.constraint(equalTo: mainview.bottomAnchor).isActive = true
         centerslot.widthAnchor.constraint(equalTo: mainview.widthAnchor,multiplier: 0.25).isActive = true
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
         
         rightslot.translatesAutoresizingMaskIntoConstraints = false
         mainview.addSubview(rightslot)
-        rightslot.leadingAnchor.constraint(equalTo: centerslot.trailingAnchor,constant: 15).isActive = true
+        rightslot.leadingAnchor.constraint(equalTo: centerslot.trailingAnchor,constant: 5).isActive = true
         rightslot.topAnchor.constraint(equalTo: mainview.topAnchor).isActive = true
         rightslot.bottomAnchor.constraint(equalTo: mainview.bottomAnchor).isActive = true
         rightslot.widthAnchor.constraint(equalTo: mainview.widthAnchor,multiplier: 0.25).isActive = true
@@ -105,8 +105,8 @@ class ViewController: UIViewController {
         armimg.image = UIImage.init(named: "single_mot")
         mainview.addSubview(armimg)
         armimg.translatesAutoresizingMaskIntoConstraints = false
-        armimg.topAnchor.constraint(equalTo: mainview.topAnchor).isActive = true
-        armimg.bottomAnchor.constraint(equalTo: mainview.bottomAnchor).isActive = true
+        armimg.centerYAnchor.constraint(equalTo: mainview.centerYAnchor).isActive = true
+        armimg.heightAnchor.constraint(equalTo: mainview.heightAnchor,multiplier: 0.5).isActive = true
         armimg.trailingAnchor.constraint(equalTo: rightslot.trailingAnchor,constant: 32).isActive = true
         armimg.widthAnchor.constraint(equalTo: rightslot.widthAnchor, multiplier: 0.4).isActive = true
         
@@ -120,7 +120,7 @@ class ViewController: UIViewController {
     func spinAction(){
         self.armimg.isUserInteractionEnabled = false // disable clicking
         // animation of bandit handle
-        animate(view: armimg, images: #imageLiteral(resourceName: "mot").spriteSheet(cols: 14, rows: 1), duration: 0.5, repeatCount: 1)
+        startanimation(view: armimg, images: #imageLiteral(resourceName: "mot").spriteSheet(cols: 14, rows: 1), duration: 0.5, repeatCount: 1)
         //userIndicatorlabel.text = ""
         //Model.instance.play(sound: Constant.spin_sound)
         //roll()
