@@ -174,7 +174,7 @@ class ViewController: UIViewController {
 
 
 extension UIViewController{
-    func animate(view : UIImageView, images : [UIImage] , duration : TimeInterval , repeatCount : Int){
+    func startanimation(view : UIImageView, images : [UIImage] , duration : TimeInterval , repeatCount : Int){
         view.animationImages = images
         view.animationDuration = duration
         view.animationRepeatCount = repeatCount
