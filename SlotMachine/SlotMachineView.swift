@@ -25,9 +25,9 @@ class SlotMachineView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     func initSubviews() {
-        
+        self.layer.cornerRadius = 15
         self.layer.borderWidth = 4
-        self.layer.borderColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
+        self.layer.borderColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
         self.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         self.addSubview(picker)
         picker.isUserInteractionEnabled = true
@@ -43,16 +43,6 @@ class SlotMachineView: UIView {
         
     }
     
-    
-    func startanimation(){
-        
-        //picker.selectRow(picker.numberOfRows(inComponent: 0)-1, inComponent: 0, animated: false)
-    }
-    func animate()
-    {
-        
-    }
-
 }
 extension SlotMachineView: UIPickerViewDataSource,UIPickerViewDelegate{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
