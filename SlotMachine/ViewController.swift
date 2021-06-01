@@ -22,14 +22,14 @@ class ViewController: UIViewController {
         swipeDown.direction = UISwipeGestureRecognizer.Direction.down
         self.armimg.addGestureRecognizer(swipeDown)
         self.armimg.isUserInteractionEnabled = true
-        view.backgroundColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         
         //Main View
         let mainview = UIView()
         mainview.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(mainview)
         mainview.backgroundColor = UIColor.clear
-        mainview.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        mainview.centerXAnchor.constraint(equalTo: view.centerXAnchor,constant: 40).isActive = true
         mainview.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         mainview.widthAnchor.constraint(equalTo: view.widthAnchor,multiplier: 0.8).isActive = true
         mainview.heightAnchor.constraint(equalTo: view.heightAnchor,multiplier: 0.25).isActive = true

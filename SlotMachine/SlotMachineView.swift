@@ -27,7 +27,7 @@ class SlotMachineView: UIView {
     func initSubviews() {
         self.layer.cornerRadius = 15
         self.layer.borderWidth = 4
-        self.layer.borderColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
+        self.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         self.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         self.addSubview(picker)
         picker.isUserInteractionEnabled = true
